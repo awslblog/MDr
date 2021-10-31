@@ -71,7 +71,7 @@ if ($this->user->hasLogin() && $this->user->pass('administrator', true) and null
             <div class="mdui-progress-indeterminate"></div>
         </div>
         <header class="mdui-appbar mdui-appbar-fixed" style="background: <?= (@$_COOKIE['dark'] == '1') ? '#212121' : '#fff' ?>;z-index:5000;">
-            <div class="mdui-toolbar">
+            <div class="mdui-toolbar mdui-color-theme">
                 <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#mdrDrawerL'}">
                     <i class="mdui-icon material-icons">menu</i>
                 </a>
@@ -87,7 +87,7 @@ if ($this->user->hasLogin() && $this->user->pass('administrator', true) and null
         </header>
         <aside class="mdui-drawer <?php if (!$this->options->mdrNavDefOpen) : ?>mdui-drawer-close<?php endif; ?>" id="mdrDrawerL">
             <div class="mdui-appbar mdui-hidden-md-up">
-                <div class="mdui-toolbar"></div>
+                <div class="mdui-toolbar mdui-color-theme"></div>
             </div>
             <div class="mdui-tab mdui-tab-full-width" id="mdrTab">
                 <a href="#mdrDrawerLmenu" class="mdui-ripple">菜单</a>
