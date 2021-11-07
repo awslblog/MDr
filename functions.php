@@ -13,24 +13,13 @@ function themeConfig($form)
     $themeQuery = $db->fetchRow($db->select()->from('table.options')->where('name = ?', "theme:$name"));
 
     /**
-     * MDr Install Match
-     * 统计安装量
+     * MDr Install Match Disabled
+     * 统计安装量已被禁用
      * 
      * @author FlyingSky-CN
-     * @link   https://mdr.docs.fsky7.com/privacy/
+     * @author awslblog
      */
-    if (!isset($themeQuery['value']) && function_exists('file_get_contents')) {
-        file_get_contents(
-            'https://api.fsky7.com/InstallMatch/newInstall?class=' .
-                urlencode('MDr ' . MDR_VERSION) . '&hostname=' . $_SERVER['HTTP_HOST'],
-            false,
-            stream_context_create(['http' => [
-                'method' => "GET",
-                'header' => "User-Agent: ForInstallMatch\r\n",
-                'timeout' => 5
-            ]])
-        );
-    }
+
 
     /**
      * MDr Options Backup
