@@ -500,9 +500,9 @@ function staticUrl($file = '')
     $lists = explode("\r\n", Helper::options()->mdrcjCDNlink);
     $cjCDNlinks = [
         'jquery.min.js' => [
-            'bc' => 'cdn.bootcss.com/jquery/3.4.1/jquery.min.js',
-            'cf' => 'cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js',
-            'jd' => 'cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js',
+            'bc' => 'cdn.bootcss.com/jquery/3.6.0/jquery.min.js',
+            'cf' => 'cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js',
+            'jd' => 'cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js',
             'custom' => isset($lists[0]) ? $lists[0] : ''
         ],
         'jquery.pjax.min.js' => [
