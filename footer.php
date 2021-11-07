@@ -13,8 +13,8 @@
     <?php endif; ?>
     <br />&copy; <?php echo date('Y'); ?>
     <a href="<?php $this->options->siteUrl(); ?>"><?php ($this->options->mdrCopytext) ? $this->options->mdrCopytext() : $this->options->title() ?></a>.
-    Powered by <a href="http://www.typecho.org" target="_blank">Typecho</a>.
-    Theme <a href="https://github.com/FlyingSky-CN/MDr/tree/petals-dev">MDr-Petals</a> by <a href="https://fsky7.com">FlyingSky</a>.<br>
+    Powered by <a href="https://www.typecho.org" target="_blank" rel="noreferrer">Typecho</a>.
+    Theme <a href="https://github.com/FlyingSky-CN/MDr/tree/petals-dev" target="_blank" rel="noreferrer">MDr-Petals</a> by <a href="https://fsky7.com" target="_blank" rel="noreferrer">FlyingSky</a>.<br>
 </footer>
 </main>
 <?php if (!MDR_PJAX) : ?>
